@@ -13,7 +13,7 @@ while o==1:
         if guesnum==rannum: # IF Eraten
           print("Herzlichen Glückwunsch du hast die Zahl beim " + str(n) + ". Versunch erraten.")
           print("Die gesuchte Zahl war", str(rannum))
-          name=input('Bitte gib deinen Namen eingeben.')
+          name=input('Bitte gib deinen Namen für die Highscoreliste ein.')
           f = open('Highscore', 'a')
           if n==1:
             f.write('\n' + name + ' -- ' + str(n) + ' Versuch')
@@ -43,7 +43,7 @@ while o==1:
     input('Press any key to go back to mainmenu.')
   
   elif choose == 'c':
-    print('\nMaincreator: Bernhard Lorenz\n')
+    print('\nMaincreator: Bernhard Lorenz\n\nSpezieller Gruß geht raus an Jakob. Wie gehts beim Einhell so\nIch werd dich beim Niedermaier vermissen. ;-)\n')
     input('Press any key to go back to mainmenu.')
 
   elif choose == 'e':
