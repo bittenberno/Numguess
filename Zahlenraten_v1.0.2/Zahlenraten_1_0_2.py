@@ -5,7 +5,7 @@ while o==1:
   if choose=="p": 
     i=1 # IF choose Play or show Highscore
     while i==1: # WHILE Play
-      rannum = random.randrange(0, 100)  
+      rannum = random.randrange(1, 100)  
       #print("The random numer is", rannum)
       for n in range(1,8):
         print('\n' + str(n) + ". Versuch")
