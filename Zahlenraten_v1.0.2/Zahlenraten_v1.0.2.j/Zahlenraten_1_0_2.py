@@ -8,12 +8,12 @@ while o==1:
       rannum = random.randrange(0, 100)  
       #print("The random numer is", rannum)
       for n in range(1,8):
-        print(str(n) + ". Versuch")
+        print('\n' + str(n) + ". Versuch")
         guesnum=int(input("Bitte eine Zahl zwischen 1 - 100 eingeben"))
         if guesnum==rannum: # IF Eraten
           print("Herzlichen Glückwunsch du hast die Zahl beim " + str(n) + ". Versunch erraten.")
           print("Die gesuchte Zahl war", str(rannum))
-          name=input('Bitte gib deinen Namen für die Highscoreliste ein.')
+          name=input('\nBitte gib deinen Namen eingeben.')
           f = open('Highscore', 'a')
           if n==1:
             f.write('\n' + name + ' -- ' + str(n) + ' Versuch')
@@ -28,23 +28,23 @@ while o==1:
           print("ungültige Eingabe")
         
         if n==7: # IF Game Over
+          print("\nGame Over")
           print('Die gesuchte Zahl war' + str(rannum) +'.')
-          print("Game Over")
           break
-      print("Danke fürs spielen.")
+      print("\nDanke fürs spielen.")
       
-      again=input('Press Enter to play again. Press any other key to go back to mainmenu.')
+      again=input('\nPress Enter to play again. Press any other key to go back to mainmenu.')
       if again!="":
         break
 
   elif choose=="h":
     Highscore=open('Highscore', 'r')
     print(Highscore.read())
-    input('Press any key to go back to mainmenu.')
+    input('\nPress any key to go back to mainmenu.')
   
   elif choose == 'c':
-    print('\nMaincreator: Bernhard Lorenz\n\nSpezieller Gruß geht raus an Jakob. Wie gehts beim Einhell so\nIch werd dich beim Niedermaier vermissen. ;-)\n')
-    input('Press any key to go back to mainmenu.')
+    print('\nMaincreator: Bernhard Lorenz\n\nSpezieller Gruß geht raus an Jakob. Wie gehts beim Einhell so\nIch werd dich beim Niedermaier vermissen. ;-)')
+    input('\nPress any key to go back to mainmenu.')
 
   elif choose == 'e':
     break
