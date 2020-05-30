@@ -43,7 +43,7 @@ while o==1:
     input('\nPress any key to go back to mainmenu.')
   
   elif choose == 'c':
-    print('\nMaincreator: Bernhard Lorenz\n\nSpezieller Gruß geht raus an Jakob. Wie gehts beim Einhell so\nIch werd dich beim Niedermaier vermissen. ;-)')
+    print('\nMaincreator: Bernhard Lorenz\n\nSpezieller Gruß geht raus an Jakob. Wie gehts beim Einhell so?\nIch werd dich beim Niedermaier vermissen. ;-)')
     input('\nPress any key to go back to mainmenu.')
 
   elif choose == 'e':
