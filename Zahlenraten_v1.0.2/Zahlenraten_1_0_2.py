@@ -19,9 +19,11 @@ while o==1:
           print("Herzlichen Glückwunsch du hast die Zahl beim " + str(n) + ". Versunch erraten.")
           print("Die gesuchte Zahl ist", str(rannum))
           name=input('Bitte gib deinen Namen eingeben.')
-          
           f = open('Highscore', 'a')
-          f.write('\n' + name + ' -- ' + str(n) + ' Versuche')
+          if n==1:
+            f.write('\n' + name + ' -- ' + str(n) + ' Versuch')
+          else:
+            f.write('\n' + name + ' -- ' + str(n) + ' Versuche')
           break
         elif guesnum>rannum:      # IF kleiner
           print("Die Zahl ist kleiner als", str(guesnum))
