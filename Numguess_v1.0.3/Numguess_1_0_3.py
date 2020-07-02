@@ -13,12 +13,18 @@ while o==1:
         if guesnum==rannum: # IF Eraten
           print("Herzlichen Glückwunsch du hast die Zahl beim " + str(n) + ". Versunch erraten.")
           print("Die gesuchte Zahl war ", str(rannum))
-          name=input('\nBitte gib deinen Namen eingeben.\n')
-          f = open('Highscore', 'a')
-          if n==1:
-            f.write('\n' + name + ' -- ' + str(n) + ' Versuch')
+          namebool=input('\nWillst du deine Leisung festhalten?   [j/n]')
+          if namebool == 'j':
+            print('\nWer schreibt der bleibt.')
+            name=input('Bitte gib deinen Namen eingeben.\n')
+            f = open('Highscore', 'a')
+            if n==1:
+              f.write('\n' + name + ' -- ' + str(n) + ' Versuch')
+            else:
+              f.write('\n' + name + ' -- ' + str(n) + ' Versuche')
+            break
           else:
-            f.write('\n' + name + ' -- ' + str(n) + ' Versuche')
+            print('Du wirst nicht in die Annalen der Geschichte eingehen.')
           break
         elif guesnum>rannum: # IF kleiner
           print("Die gesuchte Zahl ist kleiner als ", str(guesnum))
